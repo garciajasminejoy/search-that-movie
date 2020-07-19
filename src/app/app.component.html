@@ -1,0 +1,9 @@
+<div class="title-container">
+    <img class="app-icon" src="assets/images/clapper.png" alt="clapper icon">
+    <a routerLink="/" class="app-title">Search That Movie!</a>
+</div>
+<div class="container">
+    <router-outlet></router-outlet>    
+</div>
+<app-loader *ngIf="showLoader$ | async"></app-loader>
+

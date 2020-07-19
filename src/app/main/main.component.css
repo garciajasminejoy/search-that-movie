@@ -1,0 +1,16 @@
+.search-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+input[type=text] {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 300px;
+}

@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    position: relative;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(113, 19, 36,1) 28%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Indie Flower'
+}

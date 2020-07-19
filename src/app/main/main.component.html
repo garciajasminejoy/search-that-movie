@@ -1,0 +1,11 @@
+<div class="search-container">
+    <form (submit)="searchMovies()" #searchForm="ngForm" class="d-flex">
+        <input class="form-control" type="text" 
+                name="title"
+                placeholder="Movie title keyword"
+                [(ngModel)]="movie.Title"
+                required>
+        <button class="btn btn-primary" type="submit" 
+                [disabled]="!searchForm.form.valid">Search</button>
+    </form>        
+</div>

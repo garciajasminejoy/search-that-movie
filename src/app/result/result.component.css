@@ -1,0 +1,48 @@
+h3 {
+    color: #fff;
+    margin: 40px 0 20px 0;
+    font-size: 1.5rem;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.movie {
+    width: 300px;
+    margin-right: 70px;
+    margin-bottom: 55px;
+}
+
+.img-container{
+    min-height: 350px;
+    background-size: cover;
+    margin: 5px;
+}
+
+.card {
+    box-shadow: 2px 2px 5px black;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card-body {
+    min-height: 85px;
+}
+
+.card-title {
+    font-family: 'Bebas Neue';
+}
+
+.no-results-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px
+}

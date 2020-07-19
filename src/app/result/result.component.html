@@ -1,0 +1,27 @@
+<div *ngIf="!(showLoader | async)">
+    <div *ngIf="movies.length > 0; else noResultsFound">
+        <h3>Movie results for keyword <b>"{{ searchTerm }}"</b></h3>
+        <div class="movies">
+            <div class="movie" *ngFor="let movie of movies">
+                <div class="card">
+                    <div class="img-container" 
+                        [style.background]="'url(' + movie.Poster + ')'"
+                        [style.backgroundSize]="'cover'"
+                        [style.backgroundPosition]="'top center'"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ movie.$$displayText }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <ng-template #noResultsFound>
+        <div class="no-results-found">
+            <h3>No movies found with the keyword <b>"{{ searchTerm }}"</b></h3>
+            <img src="assets/images/sad-face.png" alt="sad face" height="100">            
+        </div>
+    </ng-template>
+
+</div>
+
