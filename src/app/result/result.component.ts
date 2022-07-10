@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-
 import { Movie } from '../movie.model';
-import { MoviesService } from '../movies.service';
-import { UiService } from '../ui.service';
+import { MoviesService } from '../services/movies.service';
+import { UiService } from '../services/ui.service';
+
 
 @Component({
   selector: 'app-result',

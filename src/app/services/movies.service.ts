@@ -1,9 +1,9 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-
-import { Movie } from './movie.model';
+import { Movie } from '../movie.model';
 import { UiService } from './ui.service';
+
 
 class ApiResponse {
   Response: boolean;
