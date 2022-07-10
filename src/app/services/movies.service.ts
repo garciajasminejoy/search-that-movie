@@ -33,7 +33,7 @@ export class MoviesService {
       .set('s', movie.Title);
 
     this.http.get(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=${this.apiKey}`,
+      `https://www.omdbapi.com/?i=tt3896198&apikey=${this.apiKey}`,
       { params }
     )
     .subscribe((response: ApiResponse) => {
